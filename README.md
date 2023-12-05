@@ -1,6 +1,6 @@
 # NPM module `@babbel/eslint-config`
 
-Hierarchical ESLint configuration collection that intends to be simple to use, layered, and shared with others.
+Hierarchical ESLint configuration collection that intends to be simple to use, layered, and shared with others. [(project maintainers)](./MAINTAINERS.md)
 
 ## ESLint Configurations
 
