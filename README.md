@@ -24,12 +24,12 @@ The configuration names specified below should be used as items in the `extends`
 
 ## Base Configuration Assumptions
 
+- Airbnb style guide configurations used as a guide
 - Extends the `recommended` configuration of the following plugins:
   - `eslint-plugin-eslint-comments` ([documentation](https://mysticatea.github.io/eslint-plugin-eslint-comments/))
   - `eslint-plugin-import` ([documentation](https://github.com/import-js/eslint-plugin-import#readme))
   - `eslint-plugin-regexp` ([documentation](https://github.com/ota-meshi/eslint-plugin-regexp#readme))
   - `eslint-plugin-unicorn` ([documentation](https://github.com/sindresorhus/eslint-plugin-unicorn#readme))
-- Airbnb style guide configurations used as a guide
 - Native ES module-style imports and exports
 
   - Imports
