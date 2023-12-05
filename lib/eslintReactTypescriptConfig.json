@@ -1,0 +1,13 @@
+{
+  "extends": [
+    "eslint-config-airbnb-typescript",
+    "./eslintReactConfig.json",
+    "./eslintTypescriptConfig.json",
+    "eslint-config-prettier"
+  ],
+  "env": {
+    "browser": false,
+    "node": false
+  },
+  "rules": {}
+}

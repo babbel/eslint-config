@@ -1,0 +1,34 @@
+{
+  "plugins": ["eslint-plugin-jsx-a11y"],
+  "extends": [
+    "eslint-config-airbnb",
+    "airbnb/hooks",
+    "plugin:jsx-a11y/recommended",
+    "./eslintBaseConfig.json",
+    "eslint-config-prettier"
+  ],
+  "env": {
+    "browser": false,
+    "node": false
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "jsx-a11y/lang": "error",
+    "jsx-a11y/prefer-tag-over-role": "error",
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "replacements": {
+          "prop": false,
+          "props": false,
+          "ref": false,
+          "refs": false
+        }
+      }
+    ]
+  }
+}

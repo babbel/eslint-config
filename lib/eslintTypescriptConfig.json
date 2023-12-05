@@ -1,0 +1,23 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "eslint-plugin-import"],
+  "extends": [
+    "plugin:import/typescript",
+    "eslint-config-airbnb-typescript/base",
+    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
+    "./eslintBaseConfig.json",
+    "eslint-config-prettier"
+  ],
+  "env": {
+    "browser": false,
+    "node": false
+  },
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/unbound-method": ["error", { "ignoreStatic": true }]
+  }
+}

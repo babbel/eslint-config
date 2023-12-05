@@ -1,0 +1,9 @@
+{
+  "plugins": ["eslint-plugin-compat"],
+  "extends": ["plugin:compat/recommended", "./eslintBaseConfig.json", "eslint-config-prettier"],
+  "env": {
+    "browser": true,
+    "node": false
+  },
+  "rules": {}
+}
