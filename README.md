@@ -136,7 +136,7 @@ For example, if you want to add an export called `@babbel/eslint-config/example`
 }
 ```
 
-- File a pull request and let either the Oranges team or the Pineapples team know. Be sure to at least extend from `eslintBaseConfig.json` or something more specific, or this will delay the inclusion of your contribution to the project.
+- File a pull request and wait for a project maintainer to review it. As a reminder, be sure that your new configuration extends `eslintBaseConfig.json` or a more specific configuration, otherwise the acceptance of your code contributions may be delayed.
 
 ## Final Thoughts
 
