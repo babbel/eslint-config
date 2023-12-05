@@ -119,7 +119,7 @@ I think you're getting the hang of it now...
 }
 ```
 
-The config export `@babbel/eslint-config` maps to the base config file `lib/eslintBaseConfig.json`. You can see how this works by looking for the `"."` entry in the `exports` section of this project's [`package.json`](./package.json); that section defines all the config exports rather than using proxy files at the root of the repository.
+The config export `@babbel/eslint-config` maps to the base config file `lib/eslintBaseConfig.json`. You can see how this works by looking for the `"."` entry in the `exports` section of this project's [`package.json`](./package.json); that section defines all the config exports rather than using proxy files (e.g. `index.js`) at the root of the repository.
 
 For example, if you want to add an export called `@babbel/eslint-config/example`, you would do the following:
 
