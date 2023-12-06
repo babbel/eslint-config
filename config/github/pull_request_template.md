@@ -1,8 +1,8 @@
 **Pull Request Checklist**
 
-- [ ] I have read the [CONTRIBUTING](/CONTRIBUTING.md) document
+- [ ] I have read the [CONTRIBUTING](../CONTRIBUTING.md) document
 - [ ] Readme and changelog updates were made reflecting this PR's changes
-- [ ] Increase the project version number in [`package.json`](/package.json) and [`package-lock.json`](/package-lock.json) following [Semantic Versioning](http://semver.org/)
+- [ ] Increase the project version number in [`package.json`](../package.json) and [`package-lock.json`](../package-lock.json) following [Semantic Versioning](http://semver.org/)
 
 **Changes Included**
 
