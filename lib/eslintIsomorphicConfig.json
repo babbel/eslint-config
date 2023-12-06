@@ -1,0 +1,7 @@
+{
+  "extends": ["./eslintNodeConfig.json", "./eslintBrowserConfig.json", "eslint-config-prettier"],
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

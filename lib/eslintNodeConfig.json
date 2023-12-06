@@ -1,0 +1,20 @@
+{
+  "plugins": ["eslint-plugin-n", "eslint-plugin-security"],
+  "extends": ["plugin:n/recommended", "./eslintBaseConfig.json", "eslint-config-prettier"],
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "rules": {
+    "n/no-path-concat": "error",
+    "n/prefer-global/console": "error",
+    "n/prefer-global/text-decoder": "error",
+    "n/prefer-global/text-encoder": "error",
+    "n/prefer-global/url-search-params": "error",
+    "n/prefer-global/url": "error",
+    "n/prefer-promises/dns": "error",
+    "n/prefer-promises/fs": "error",
+    "no-console": "off",
+    "security/detect-bidi-characters": "error"
+  }
+}

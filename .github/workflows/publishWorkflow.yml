@@ -1,0 +1,27 @@
+name: Publish Workflow
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20.10.0"
+      - id: super-cache
+        uses: mangs/super-cache-action@v3
+      - if: steps.super-cache.outputs.cache-hit != 'true'
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
+
+      # Task execution
+      # - run: npm publish
+      #   env:
+      #     NODE_AUTH_TOKEN: ${{ github.token }}
+      - uses: mangs/simple-release-notes-action@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}

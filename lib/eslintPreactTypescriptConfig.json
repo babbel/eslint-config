@@ -1,0 +1,9 @@
+{
+  "extends": ["./eslintReactTypescriptConfig.json"],
+  "settings": {
+    "react": {
+      "pragma": "h"
+    }
+  },
+  "rules": {}
+}

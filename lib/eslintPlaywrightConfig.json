@@ -1,0 +1,11 @@
+{
+  "plugins": ["eslint-plugin-playwright"],
+  "extends": ["plugin:playwright/recommended", "./eslintNodeConfig.json", "eslint-config-prettier"],
+  "rules": {
+    "playwright/prefer-strict-equal": "error",
+    "playwright/prefer-to-be": "error",
+    "playwright/prefer-to-contain": "error",
+    "playwright/prefer-to-have-length": "error",
+    "playwright/require-top-level-describe": "error"
+  }
+}
