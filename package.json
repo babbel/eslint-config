@@ -1,6 +1,6 @@
 {
   "name": "@babbel/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "author": "Eric L. Goldstein <egoldstein@babbel.com>",
   "description": "Hierarchical ESLint configuration collection that intends to be simple to use, layered, and shared with others",
   "keywords": [
