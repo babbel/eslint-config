@@ -19,9 +19,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_TOKEN }}
 
       # Task execution
-      # - run: npm publish
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{ github.token }}
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
       - uses: mangs/simple-release-notes-action@v2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
