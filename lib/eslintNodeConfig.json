@@ -6,7 +6,13 @@
     "node": true
   },
   "rules": {
+    "n/no-extraneous-import": "off",
+    "n/no-extraneous-require": "off",
+    "n/no-missing-import": "off",
+    "n/no-missing-require": "off",
     "n/no-path-concat": "error",
+    "n/no-unpublished-import": "off",
+    "n/no-unpublished-require": "off",
     "n/prefer-global/console": "error",
     "n/prefer-global/text-decoder": "error",
     "n/prefer-global/text-encoder": "error",
