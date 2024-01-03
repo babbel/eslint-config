@@ -1,6 +1,6 @@
 {
   "name": "@babbel/eslint-config",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Eric L. Goldstein <egoldstein@babbel.com>",
   "description": "Hierarchical ESLint configuration collection that intends to be simple to use, layered, and shared with others",
   "keywords": [
@@ -35,6 +35,7 @@
     "list:todo-comments": "rg --only-matching '(TODO|FIXME):[a-zA-Z0-9\\t .,;?]+'",
     "reinstall": "npm-run-all --silent delete:node_modules delete:package-lock && npm i",
     "reinstall:use-lock-file": "npm run --silent delete:node_modules && npm ci",
+    "test": "eslint --max-warnings 0 --report-unused-disable-directives test/**/*.mjs",
     "validate:formatting": "prettier --check --no-editorconfig .",
     "validate:linting:eslint": "eslint-config-prettier ./lib/eslintBaseConfig.json"
   },
@@ -59,9 +60,11 @@
     "eslint-plugin-unicorn": "49.0.0"
   },
   "devDependencies": {
-    "eslint": "8.55.0",
+    "@types/node": "20.10.6",
+    "eslint": "8.56.0",
     "npm-run-all": "4.1.5",
-    "prettier": "3.1.0"
+    "prettier": "3.1.0",
+    "typescript": "5.3.3"
   },
   "peerDependencies": {
     "eslint": ">=8.44.0"

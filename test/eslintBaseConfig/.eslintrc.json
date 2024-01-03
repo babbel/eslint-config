@@ -1,0 +1,4 @@
+{
+  "root": true,
+  "extends": ["../../lib/eslintBaseConfig.json", "eslint-config-prettier"]
+}
