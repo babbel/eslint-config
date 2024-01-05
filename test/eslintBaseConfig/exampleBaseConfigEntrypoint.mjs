@@ -17,6 +17,7 @@ const now = new Date(); // Rule: unicorn/new-for-builtins
 const nowInMilliseconds = Date.now(); // Rule: unicorn/prefer-date-now
 const oneThousand = 1_000; // Rule: unicorn/numeric-separators-style
 const objectWithSortedKeys = {
+  // Rule: sort-keys
   a: 'a',
   b: 'b',
   c: 'c',
