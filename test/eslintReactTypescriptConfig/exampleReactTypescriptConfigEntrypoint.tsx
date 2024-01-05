@@ -5,8 +5,12 @@ import { createRoot } from 'react-dom/client';
 import React from 'react';
 
 // Internal Imports
-import { Game } from './components/Game.jsx';
+import { Game } from './components/Game.tsx';
 
 // Render the Application
-const reactRoot = createRoot(document.querySelector('#react-root'));
+const rootElement = document.querySelector('#react-root');
+if (!rootElement) {
+  throw new TypeError('React root element not found');
+}
+const reactRoot = createRoot(rootElement);
 reactRoot.render(<Game />);

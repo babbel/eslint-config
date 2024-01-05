@@ -2,7 +2,8 @@
 
 ## 1.2.0
 
-- Add example code for each configuration to verify correctness during continuous integration
+- Testing added using example code for each configuration to verify correctness during continuous integration
+- React and Preact TypeScript configs now allow JSX in files with `.tsx` file extensions
 - Remove dev dependency `npm-run-all` because it was only used during the `reinstall` NPM script and would cause an error if dependencies weren't installed prior to execution
 
 ## 1.1.0
