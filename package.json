@@ -35,7 +35,7 @@
     "list:todo-comments": "rg --only-matching '(TODO|FIXME):[a-zA-Z0-9\\t .,;?]+'",
     "reinstall": "npm run --silent delete:node_modules && npm run --silent delete:package-lock && npm i",
     "reinstall:use-lock-file": "npm run --silent delete:node_modules && npm ci",
-    "test": "eslint --max-warnings 0 --report-unused-disable-directives test/**/*.{js,mjs}",
+    "test": "eslint --max-warnings 0 --report-unused-disable-directives test/**/*.{js,jsx,mjs}",
     "validate:formatting": "prettier --check --no-editorconfig .",
     "validate:linting:eslint": "eslint-config-prettier ./lib/eslintBaseConfig.json"
   },
@@ -66,6 +66,9 @@
     "eslint": "8.56.0",
     "jest": "29.7.0",
     "prettier": "3.1.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "typescript": "5.3.3"
   },
   "peerDependencies": {
