@@ -1,3 +1,5 @@
+// Code adapted from here: https://nodejs.org/en/learn/getting-started/introduction-to-nodejs#an-example-nodejs-application
+
 // External Imports
 import http from 'node:http';
 
