@@ -35,7 +35,7 @@
     "list:todo-comments": "rg --only-matching '(TODO|FIXME):[a-zA-Z0-9\\t .,;?]+'",
     "reinstall": "npm-run-all --silent delete:node_modules delete:package-lock && npm i",
     "reinstall:use-lock-file": "npm run --silent delete:node_modules && npm ci",
-    "test": "eslint --max-warnings 0 --report-unused-disable-directives test/**/*.mjs",
+    "test": "eslint --max-warnings 0 --report-unused-disable-directives test/**/*.{js,mjs}",
     "validate:formatting": "prettier --check --no-editorconfig .",
     "validate:linting:eslint": "eslint-config-prettier ./lib/eslintBaseConfig.json"
   },
