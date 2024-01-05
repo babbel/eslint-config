@@ -9,5 +9,7 @@
     "browser": false,
     "node": false
   },
-  "rules": {}
+  "rules": {
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }]
+  }
 }

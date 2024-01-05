@@ -1,0 +1,5 @@
+[production]
+last 1 Chrome major version
+
+[ssr]
+maintained Node versions

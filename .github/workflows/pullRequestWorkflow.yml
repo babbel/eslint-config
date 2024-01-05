@@ -19,3 +19,4 @@ jobs:
       # Task execution
       - run: npm run validate:formatting
       - run: npm run validate:linting:eslint
+      - run: npm run test

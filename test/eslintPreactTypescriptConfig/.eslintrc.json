@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": ["../../lib/eslintPreactTypescriptConfig.json", "../../lib/eslintBrowserConfig.json"],
+  "overrides": [
+    {
+      "files": "./components/*.tsx",
+      "rules": { "unicorn/filename-case": ["error", { "case": "pascalCase" }] }
+    }
+  ]
+}
