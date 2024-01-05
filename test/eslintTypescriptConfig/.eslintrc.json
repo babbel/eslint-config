@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["../../lib/eslintTypescriptConfig.json"]
+  "extends": ["../../lib/eslintTypescriptConfig.json", "../../lib/eslintNodeConfig.json"]
 }
