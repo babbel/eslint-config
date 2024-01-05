@@ -2,7 +2,7 @@
 import {
   buildUncachedResponse,
   defaultRoute,
-  precacheRoute,
+  alternateRoute,
 } from './exampleTypescriptConfigImport.ts';
 
 // Type Imports
@@ -15,8 +15,8 @@ function lambdaHandler(apiGatewayEvent: APIGatewayProxyEvent): APIGatewayProxySt
 
   try {
     switch (path) {
-      case '/precache':
-        return precacheRoute(apiGatewayEvent);
+      case '/alternate':
+        return alternateRoute(apiGatewayEvent);
       default:
         return defaultRoute(apiGatewayEvent);
     }
@@ -25,7 +25,7 @@ function lambdaHandler(apiGatewayEvent: APIGatewayProxyEvent): APIGatewayProxySt
     if (error instanceof Error) {
       console.log(errorMessage, JSON.stringify(error)); // Log to CloudWatch
     }
-    const statusCode = path === '/precache' ? 200 : 500; // Prevent error responses for the precache route
+    const statusCode = path === '/alternate' ? 200 : 500; // Prevent error responses for the alternate route
     return buildUncachedResponse(errorMessage, statusCode);
   }
 }
