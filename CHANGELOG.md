@@ -3,6 +3,7 @@
 ## 1.2.0
 
 - Add example code for each configuration to verify correctness during continuous integration
+- Remove dev dependency `npm-run-all` because it was only used during the `reinstall` NPM script and would cause an error if dependencies weren't installed prior to execution
 
 ## 1.1.0
 

@@ -33,7 +33,7 @@
     "format:code": "prettier --write --no-editorconfig .",
     "list:eslint:disable-directives": "rg '/(/|\\*+)[ \\t]*eslint-disable[^*]*(\\*+/)?'",
     "list:todo-comments": "rg --only-matching '(TODO|FIXME):[a-zA-Z0-9\\t .,;?]+'",
-    "reinstall": "npm-run-all --silent delete:node_modules delete:package-lock && npm i",
+    "reinstall": "npm run --silent delete:node_modules && npm run --silent delete:package-lock && npm i",
     "reinstall:use-lock-file": "npm run --silent delete:node_modules && npm ci",
     "test": "eslint --max-warnings 0 --report-unused-disable-directives test/**/*.{js,mjs}",
     "validate:formatting": "prettier --check --no-editorconfig .",
@@ -62,7 +62,6 @@
   "devDependencies": {
     "@types/node": "20.10.6",
     "eslint": "8.56.0",
-    "npm-run-all": "4.1.5",
     "prettier": "3.1.0",
     "typescript": "5.3.3"
   },
