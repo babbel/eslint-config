@@ -7,4 +7,4 @@ import { h, render } from 'preact';
 import { Game } from './components/Game.jsx';
 
 // Render the Application
-render(document.querySelector('#preact-root'), <Game />)
+render(<Game />, document.querySelector('#preact-root'));
