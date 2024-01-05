@@ -2,7 +2,6 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
-    "outDir": "dist",
     "verbatimModuleSyntax": true,
 
     // ASTRO BASE TSCONFIG
