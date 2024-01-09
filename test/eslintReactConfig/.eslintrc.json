@@ -1,0 +1,10 @@
+{
+  "root": true,
+  "extends": ["../../lib/eslintReactConfig.json", "../../lib/eslintBrowserConfig.json"],
+  "overrides": [
+    {
+      "files": "./components/*.jsx",
+      "rules": { "unicorn/filename-case": ["error", { "case": "pascalCase" }] }
+    }
+  ]
+}
