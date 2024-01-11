@@ -2,9 +2,7 @@
 
 ## 1.2.1
 
-- Change the base config's `import/order` rule
-  - The `unknown` import type now fills the last import group slot
-  - Existing import groups are now sorted alphabetically
+- Change the base config's `import/order` rule so the `unknown` import type now fills the last import group slot
 
 ## 1.2.0
 
