@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Change the base config's `import/order` rule so the `unknown` import type now fills the last import group slot
+
 ## 1.2.0
 
 - Testing added using example code for each configuration to verify correctness during continuous integration
