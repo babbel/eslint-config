@@ -12,8 +12,11 @@ The configuration names specified below should be used as items in the `extends`
 
 - [`@babbel/eslint-config`](./lib/eslintBaseConfig.json): base configuration that all configurations inherit from
 - [`@babbel/eslint-config/browser`](./lib/eslintBrowserConfig.json): for browser environments (**should always be last in your "extends" array**)
+- [`@babbel/eslint-config/bun`](./lib/eslintBunConfig.json): for [Bun](https://bun.sh/) environments (**should always be last in your "extends" array**)
 - [`@babbel/eslint-config/isomorphic`](./lib/eslintIsomorphicConfig.json): for isomorphic environments; in other words, using the browser and Node.js simultaneously on the same code (**should always be last in your "extends" array**)
 - [`@babbel/eslint-config/jest`](./lib/eslintJestConfig.json): for testing environments using [Jest](https://jestjs.io/)
+- [`@babbel/eslint-config/jsdoc`](./lib/eslintJsdocConfig.json): for documentation enforcement using [JSDoc](https://jsdoc.app/)
+- [`@babbel/eslint-config/jsdoc-typescript`](./lib/eslintJsdocTypescriptConfig.json): for documentation enforcement using [JSDoc](https://jsdoc.app/) and [TypeScript](https://www.typescriptlang.org/)
 - [`@babbel/eslint-config/node`](./lib/eslintNodeConfig.json): for [Node.js](https://nodejs.org/) environments (**should always be last in your "extends" array**)
 - [`@babbel/eslint-config/playwright`](./lib/eslintPlaywrightConfig.json): for testing environments using the [Playwright](https://playwright.dev/) test runner (not `jest-playwright`)
 - [`@babbel/eslint-config/preact`](./lib/eslintPreactConfig.json): for [Preact](https://preactjs.com/) environments

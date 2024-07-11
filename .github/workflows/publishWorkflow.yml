@@ -7,20 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
+      - name: CPU Details
+        run: lscpu
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: "20.10.0"
-          registry-url: https://registry.npmjs.org
-      - id: super-cache
-        uses: mangs/super-cache-action@v3
-      - if: steps.super-cache.outputs.cache-hit != 'true'
-        run: npm ci
-
-      # Task execution
-      - uses: mangs/simple-release-notes-action@v2
+          bun-version: "1.1.17"
+      - uses: mangs/simple-release-notes-action@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_USER_ACCESS_TOKEN }}
+          should_auto_update_major_tag: false
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          access: public
+          registry: https://registry.npmjs.org/
+          token: ${{ secrets.NPM_USER_ACCESS_TOKEN }}

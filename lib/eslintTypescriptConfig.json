@@ -5,11 +5,11 @@
   },
   "plugins": ["@typescript-eslint/eslint-plugin", "eslint-plugin-import"],
   "extends": [
-    "plugin:import/typescript",
     "eslint-config-airbnb-typescript/base",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "./eslintBaseConfig.json",
+    "plugin:import/typescript",
     "eslint-config-prettier"
   ],
   "env": {

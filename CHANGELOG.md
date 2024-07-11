@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.0
+
+- 3 new configurations added
+  - `/bun` for Bun support
+  - `/jsdoc` for JSDoc support in JavaScript projects
+  - `/jsdoc-typescript` for JSDoc support in TypeScript projects
+- ESLint version `8.56.0` is now the minimum supported version, but version `9.x` cannot be supported yet due to a dependency on the `eslint-config-airbnb*` packages and its strict requirement for the flat config format
+- Node.js `18.18.0` is now the minimum supported runtime version because of dependency requirements
+- [Bun](https://bun.sh/) replaces NPM as a script runner and package manager for maintenance of this package
+- Upgrade dependencies to latest versions
+
 ## 1.2.2
 
 - Upgrade dependencies to latest versions
