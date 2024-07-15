@@ -1,5 +1,5 @@
 {
-  "extends": ["./eslintTypescriptConfig.json", "./eslintNodeConfig.json"],
+  "extends": ["./eslintTypescriptConfig.json", "./eslintNodeConfig.json", "eslint-config-prettier"],
   "globals": {
     "Bun": "readonly"
   },
