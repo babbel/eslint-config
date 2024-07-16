@@ -41,6 +41,7 @@
     "format:code": "prettier --write --no-editorconfig .",
     "list:eslint:disable-directives": "rg '/(/|\\*+)[ \\t]*eslint-disable[^*]*(\\*+/)?'",
     "list:todo-comments": "rg --only-matching '(TODO|FIXME)([\t ]+\\[[^\\]]+\\])?:[\\w\\s!\"#$%&'\\''()+,./:;<=>?@\\^_`{|}~-]+'",
+    "preinstall": "bun run check:environment:versions",
     "reinstall": "bun run --silent delete:package-lock && bun run --silent delete:node-modules && bun install",
     "reinstall:use-lock-file": "bun run --silent delete:node-modules && bun install --frozen-lockfile",
     "test": "eslint --max-warnings 0 --report-unused-disable-directives test/**/*.{js,jsx,mjs,ts,tsx}"
