@@ -11,8 +11,7 @@ Hierarchical ESLint configuration collection that intends to be simple to use, l
   - [Node.js Environment](#nodejs-environment)
   - [Browser Environment That Uses React, TypeScript, Jest, and a Custom Rule](#browser-environment-that-uses-react-typescript-jest-and-a-custom-rule)
 - [Making Your Own Config From the Base Config 🎓](#making-your-own-config-from-the-base-config-)
-- [Final Thoughts](#final-thoughts)
-- [Feedback Encouraged =D](#feedback-encouraged-d)
+- [Making Changes to This Library](#making-changes-to-this-library)
 
 ## ESLint Configurations
 
