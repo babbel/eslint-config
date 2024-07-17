@@ -2,6 +2,18 @@
 
 Hierarchical ESLint configuration collection that intends to be simple to use, layered, and shared with others. [(project maintainers)](./MAINTAINERS.md)
 
+## Table of Contents
+
+- [ESLint Configurations](#eslint-configurations)
+- [Base Configuration Assumptions](#base-configuration-assumptions)
+- [Example Usage](#example-usage)
+  - [Browser Environment](#browser-environment)
+  - [Node.js Environment](#nodejs-environment)
+  - [Browser Environment That Uses React, TypeScript, Jest, and a Custom Rule](#browser-environment-that-uses-react-typescript-jest-and-a-custom-rule)
+- [Making Your Own Config From the Base Config 🎓](#making-your-own-config-from-the-base-config-)
+- [Final Thoughts](#final-thoughts)
+- [Feedback Encouraged =D](#feedback-encouraged-d)
+
 ## ESLint Configurations
 
 There are multiple configurations you can use in your projects listed below. These are meant to be used in combination with one another. Please note that the base configuration is used by all the others, so there's no need to include that in your configuration unless it's the only one you're using.
@@ -141,10 +153,10 @@ For example, if you want to add an export called `@babbel/eslint-config/example`
 
 - File a pull request and wait for a project maintainer to review it. As a reminder, be sure that your new configuration extends `eslintBaseConfig.json` or a more specific configuration, otherwise the acceptance of your code contributions may be delayed.
 
-## Final Thoughts
+## Making Changes to This Library
 
-These are just a few examples. Any field in the ESLint configuration can be overridden, so you can customize these as much as you want. If you find yourself or your team using a configuration set over and over again, consider submitting it to make it part of this collection.
+Maintenance of this library requires a specific version of [Bun](https://bun.sh/) to be installed. Because there are no well-established version managers for Bun (e.g. `nvm` for Node.js), a `package.json` script was added to overwrite the currently-installed version of Bun with the expected version for this project. Execute the install script by running
 
-## Feedback Encouraged =D
-
-If you have any suggestions for improvements, please send them our way. 📫
+```bash
+bun run --silent install:bun:expected-version
+```
