@@ -11,7 +11,7 @@ Hierarchical ESLint configuration collection that intends to be simple to use, l
   - [Node.js Environment](#nodejs-environment)
   - [Browser Environment That Uses React, TypeScript, Jest, and a Custom Rule](#browser-environment-that-uses-react-typescript-jest-and-a-custom-rule)
 - [Making Your Own Config From the Base Config 🎓](#making-your-own-config-from-the-base-config-)
-- [Making Changes to This Library](#making-changes-to-this-library)
+- [Changing This Library](#changing-this-library)
 
 ## ESLint Configurations
 
@@ -152,7 +152,7 @@ For example, if you want to add an export called `@babbel/eslint-config/example`
 
 - File a pull request and wait for a project maintainer to review it. As a reminder, be sure that your new configuration extends `eslintBaseConfig.json` or a more specific configuration, otherwise the acceptance of your code contributions may be delayed.
 
-## Making Changes to This Library
+## Changing This Library
 
 Maintenance of this library requires an exact version of [Bun](https://bun.sh/) to be installed, specifically the one listed in the `packageManager` field of `package.json`. Because there are no well-established version managers for Bun (e.g. like `nvm` for Node.js), a `package.json` script was added to overwrite the currently-installed version of Bun with the expected version for this project; Bun's entire install is a single binary, so doing so is a safe operation.
 
