@@ -154,7 +154,9 @@ For example, if you want to add an export called `@babbel/eslint-config/example`
 
 ## Making Changes to This Library
 
-Maintenance of this library requires a specific version of [Bun](https://bun.sh/) to be installed. Because there are no well-established version managers for Bun (e.g. `nvm` for Node.js), a `package.json` script was added to overwrite the currently-installed version of Bun with the expected version for this project. Execute the install script by running
+Maintenance of this library requires an exact version of [Bun](https://bun.sh/) to be installed, specifically the one listed in the `packageManager` field of `package.json`. Because there are no well-established version managers for Bun (e.g. like `nvm` for Node.js), a `package.json` script was added to overwrite the currently-installed version of Bun with the expected version for this project; Bun's entire install is a single binary, so doing so is a safe operation.
+
+Execute the install script by running
 
 ```bash
 bun run --silent install:bun:expected-version
