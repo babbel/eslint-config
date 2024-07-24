@@ -68,7 +68,7 @@
     "eslint-plugin-unicorn": "54.0.0"
   },
   "devDependencies": {
-    "@mangs/bun-utils": "2.26.0",
+    "@mangs/bun-utils": "2.26.1",
     "@playwright/test": "1.45.3",
     "@types/aws-lambda": "8.10.142",
     "@types/node": "20.14.12",
