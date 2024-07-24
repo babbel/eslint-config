@@ -11,7 +11,7 @@
   - `/jsdoc` for JSDoc support in JavaScript projects
   - `/jsdoc-typescript` for JSDoc support in TypeScript projects
 - [Bun](https://bun.sh/) replaces NPM as a script runner and package manager for maintenance of this package
-- When grouping module imports, [subpath imports](https://nodejs.org/api/packages.html#subpath-imports) are now part of the 2nd or `Internal Imports` module imports grouping
+- When grouping module imports, [subpath imports](https://nodejs.org/api/packages.html#subpath-imports) are now treated as part of the 2nd or `Internal Imports` module imports grouping
 - Upgrade dependencies to latest versions
 
 ## 1.2.2
