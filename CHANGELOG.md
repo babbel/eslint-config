@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.1
+
+- Fix `/bun` config profile so it emulates Node.js `^21.0.0` versions, otherwise linting for feature support will fail for modern APIs common in Bun apps like `Request`, `Response`, and `Headers`
+- Upgrade dependencies to latest versions
+
 ## 2.0.0
 
 - **Breaking Changes**
