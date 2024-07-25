@@ -3,6 +3,7 @@ const reportUrl = '//www.babbel.com/report';
 
 // Local Functions
 async function reportBrowserUserAgent() {
+  // eslint-disable-next-line n/no-unsupported-features/node-builtins -- only runs in browsers
   const { userAgent } = navigator;
   await postRequest(reportUrl, { browserUserAgent: userAgent });
 }
@@ -21,6 +22,7 @@ async function main() {
 }
 
 function postRequest(url, data = {}) {
+  // eslint-disable-next-line n/no-unsupported-features/node-builtins -- fetch() is experimental but functional in Node 18.18.0+
   return fetch(url, {
     body: JSON.stringify(data),
     cache: 'no-store',

@@ -4,8 +4,7 @@
     "eslint-config-airbnb",
     "airbnb/hooks",
     "plugin:jsx-a11y/recommended",
-    "./eslintBaseConfig.json",
-    "eslint-config-prettier"
+    "./eslintBaseConfig.json"
   ],
   "env": {
     "browser": false,

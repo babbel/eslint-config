@@ -15,14 +15,13 @@
   "reportUnusedDisableDirectives": true,
   "env": {
     "browser": false,
-    "es2023": true,
+    "es2024": true,
     "node": false
   },
   "parserOptions": {
     "ecmaFeatures": {
       "impliedStrict": true
     },
-    "ecmaVersion": 2023,
     "sourceType": "module"
   },
   "rules": {
@@ -39,10 +38,9 @@
       {
         "groups": [
           ["builtin", "external"],
-          ["index", "internal", "parent", "sibling"],
+          ["index", "internal", "parent", "sibling", "unknown"],
           ["type"],
-          ["object"],
-          ["unknown"]
+          ["object"]
         ],
         "newlines-between": "always"
       }

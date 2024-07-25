@@ -3,14 +3,13 @@
   "parserOptions": {
     "project": ["./tsconfig.json"]
   },
-  "plugins": ["@typescript-eslint/eslint-plugin", "eslint-plugin-import"],
+  "plugins": ["@typescript-eslint/eslint-plugin"],
   "extends": [
-    "plugin:import/typescript",
     "eslint-config-airbnb-typescript/base",
     "plugin:@typescript-eslint/recommended-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "./eslintBaseConfig.json",
-    "eslint-config-prettier"
+    "plugin:import/typescript"
   ],
   "env": {
     "browser": false,

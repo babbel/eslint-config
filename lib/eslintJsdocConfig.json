@@ -1,0 +1,13 @@
+{
+  "plugins": ["eslint-plugin-jsdoc"],
+  "rules": {
+    "jsdoc/multiline-blocks": ["error", { "noSingleLineBlocks": true }],
+    "jsdoc/no-bad-blocks": "error",
+    "jsdoc/require-asterisk-prefix": "error",
+    "jsdoc/require-description-complete-sentence": "error",
+    "jsdoc/require-description": "error",
+    "jsdoc/require-file-overview": "error",
+    "jsdoc/require-hyphen-before-param-description": ["error", "never"],
+    "jsdoc/sort-tags": "error"
+  }
+}

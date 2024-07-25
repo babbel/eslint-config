@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["../../lib/eslintPlaywrightConfig.json"]
+  "extends": ["../../lib/eslintPlaywrightConfig.json", "../../lib/eslintNodeConfig.json"]
 }

@@ -1,6 +1,6 @@
 {
   "plugins": ["eslint-plugin-playwright"],
-  "extends": ["plugin:playwright/recommended", "./eslintNodeConfig.json", "eslint-config-prettier"],
+  "extends": ["plugin:playwright/recommended"],
   "rules": {
     "playwright/prefer-strict-equal": "error",
     "playwright/prefer-to-be": "error",

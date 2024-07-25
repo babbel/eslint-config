@@ -1,0 +1,3 @@
+{
+  "extends": ["./eslintJsdocConfig.json", "plugin:jsdoc/recommended-typescript-error"]
+}

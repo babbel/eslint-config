@@ -2,6 +2,17 @@
 
 Hierarchical ESLint configuration collection that intends to be simple to use, layered, and shared with others. [(project maintainers)](./MAINTAINERS.md)
 
+## Table of Contents
+
+- [ESLint Configurations](#eslint-configurations)
+- [Base Configuration Assumptions](#base-configuration-assumptions)
+- [Example Usage](#example-usage)
+  - [Browser Environment](#browser-environment)
+  - [Node.js Environment](#nodejs-environment)
+  - [Browser Environment That Uses React, TypeScript, Jest, and a Custom Rule](#browser-environment-that-uses-react-typescript-jest-and-a-custom-rule)
+- [Making Your Own Config From the Base Config 🎓](#making-your-own-config-from-the-base-config-)
+- [Changing This Library](#changing-this-library)
+
 ## ESLint Configurations
 
 There are multiple configurations you can use in your projects listed below. These are meant to be used in combination with one another. Please note that the base configuration is used by all the others, so there's no need to include that in your configuration unless it's the only one you're using.
@@ -12,8 +23,11 @@ The configuration names specified below should be used as items in the `extends`
 
 - [`@babbel/eslint-config`](./lib/eslintBaseConfig.json): base configuration that all configurations inherit from
 - [`@babbel/eslint-config/browser`](./lib/eslintBrowserConfig.json): for browser environments (**should always be last in your "extends" array**)
+- [`@babbel/eslint-config/bun`](./lib/eslintBunConfig.json): for [Bun](https://bun.sh/) environments (**should always be last in your "extends" array**)
 - [`@babbel/eslint-config/isomorphic`](./lib/eslintIsomorphicConfig.json): for isomorphic environments; in other words, using the browser and Node.js simultaneously on the same code (**should always be last in your "extends" array**)
 - [`@babbel/eslint-config/jest`](./lib/eslintJestConfig.json): for testing environments using [Jest](https://jestjs.io/)
+- [`@babbel/eslint-config/jsdoc`](./lib/eslintJsdocConfig.json): for documentation enforcement using [JSDoc](https://jsdoc.app/)
+- [`@babbel/eslint-config/jsdoc-typescript`](./lib/eslintJsdocTypescriptConfig.json): for documentation enforcement using [JSDoc](https://jsdoc.app/) and [TypeScript](https://www.typescriptlang.org/)
 - [`@babbel/eslint-config/node`](./lib/eslintNodeConfig.json): for [Node.js](https://nodejs.org/) environments (**should always be last in your "extends" array**)
 - [`@babbel/eslint-config/playwright`](./lib/eslintPlaywrightConfig.json): for testing environments using the [Playwright](https://playwright.dev/) test runner (not `jest-playwright`)
 - [`@babbel/eslint-config/preact`](./lib/eslintPreactConfig.json): for [Preact](https://preactjs.com/) environments
@@ -138,10 +152,12 @@ For example, if you want to add an export called `@babbel/eslint-config/example`
 
 - File a pull request and wait for a project maintainer to review it. As a reminder, be sure that your new configuration extends `eslintBaseConfig.json` or a more specific configuration, otherwise the acceptance of your code contributions may be delayed.
 
-## Final Thoughts
+## Changing This Library
 
-These are just a few examples. Any field in the ESLint configuration can be overridden, so you can customize these as much as you want. If you find yourself or your team using a configuration set over and over again, consider submitting it to make it part of this collection.
+Maintenance of this library requires an exact version of [Bun](https://bun.sh/) to be installed, specifically the one listed in the `packageManager` field of `package.json`. Because there are no well-established version managers for Bun (e.g. like `nvm` for Node.js), a `package.json` script was added to overwrite the currently-installed version of Bun with the expected version for this project; Bun's entire install is a single binary, so doing so is a safe operation.
 
-## Feedback Encouraged =D
+Execute the install script by running
 
-If you have any suggestions for improvements, please send them our way. 📫
+```bash
+bun run --silent install:bun:expected-version
+```

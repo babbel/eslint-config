@@ -1,0 +1,9 @@
+{
+  "extends": ["./eslintTypescriptConfig.json", "./eslintNodeConfig.json", "eslint-config-prettier"],
+  "globals": {
+    "Bun": "readonly"
+  },
+  "settings": {
+    "import/core-modules": ["bun", "bun:jsc", "bun:sql", "bun:sqlite", "bun:test"]
+  }
+}
