@@ -4,6 +4,9 @@
     "Bun": "readonly"
   },
   "settings": {
-    "import/core-modules": ["bun", "bun:jsc", "bun:sql", "bun:sqlite", "bun:test"]
+    "import/core-modules": ["bun", "bun:jsc", "bun:sql", "bun:sqlite", "bun:test"],
+    "node": {
+      "version": "^21.0.0"
+    }
   }
 }
