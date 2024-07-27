@@ -1,6 +1,6 @@
 {
   "name": "@babbel/eslint-config",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Eric L. Goldstein <egoldstein@babbel.com>",
   "description": "Hierarchical ESLint configuration collection that intends to be simple to use, layered, and shared with others",
   "keywords": [
@@ -61,14 +61,14 @@
     "eslint-plugin-jest-formatting": "3.1.0",
     "eslint-plugin-jsdoc": "48.8.3",
     "eslint-plugin-jsx-a11y": "6.9.0",
-    "eslint-plugin-n": "17.9.0",
+    "eslint-plugin-n": "17.10.1",
     "eslint-plugin-playwright": "1.6.2",
     "eslint-plugin-regexp": "2.6.0",
     "eslint-plugin-security": "3.0.1",
     "eslint-plugin-unicorn": "55.0.0"
   },
   "devDependencies": {
-    "@mangs/bun-utils": "2.26.1",
+    "@mangs/bun-utils": "2.26.2",
     "@playwright/test": "1.45.3",
     "@types/aws-lambda": "8.10.142",
     "@types/node": "20.14.12",

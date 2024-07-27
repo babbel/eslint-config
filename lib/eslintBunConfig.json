@@ -6,7 +6,7 @@
   "settings": {
     "import/core-modules": ["bun", "bun:jsc", "bun:sql", "bun:sqlite", "bun:test"],
     "node": {
-      "version": "^21.0.0"
+      "version": "22.x"
     }
   }
 }
