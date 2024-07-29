@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.2
+
+- Fix `/bun` config profile so it no longer checks for Node.js version to enforce feature support. Because Node.js is based on v8 and Bun on JSC, the two runtimes will likely forever be out of sync, so best to rely on TypeScript types for feature support rather than version chasing.
+- Upgrade dependencies to latest versions
+
 ## 2.0.1
 
 - Fix `/bun` config profile so it emulates Node.js `^21.0.0` versions, otherwise linting for feature support will fail for modern APIs common in Bun apps like `Request`, `Response`, and `Headers`

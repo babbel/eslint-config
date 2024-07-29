@@ -4,9 +4,11 @@
     "Bun": "readonly"
   },
   "settings": {
-    "import/core-modules": ["bun", "bun:jsc", "bun:sql", "bun:sqlite", "bun:test"],
-    "node": {
-      "version": "^21.0.0"
-    }
+    "import/core-modules": ["bun", "bun:jsc", "bun:sql", "bun:sqlite", "bun:test"]
+  },
+  "rules": {
+    "n/no-unsupported-features/es-builtins": "off",
+    "n/no-unsupported-features/es-syntax": "off",
+    "n/no-unsupported-features/node-builtins": "off"
   }
 }
