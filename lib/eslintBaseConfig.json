@@ -2,6 +2,7 @@
   "plugins": [
     "eslint-plugin-eslint-comments",
     "eslint-plugin-import",
+    "eslint-plugin-perfectionist",
     "eslint-plugin-regexp",
     "eslint-plugin-unicorn"
   ],
@@ -9,6 +10,7 @@
     "eslint-config-airbnb-base",
     "plugin:eslint-comments/recommended",
     "plugin:import/recommended",
+    "plugin:perfectionist/recommended-alphabetical-legacy",
     "plugin:regexp/recommended",
     "plugin:unicorn/recommended"
   ],
@@ -33,24 +35,34 @@
     "import/group-exports": "error",
     "import/no-default-export": "error",
     "import/no-unresolved": ["error", { "caseSensitiveStrict": true }],
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          ["builtin", "external"],
-          ["index", "internal", "parent", "sibling", "unknown"],
-          ["type"],
-          ["object"]
-        ],
-        "newlines-between": "always"
-      }
-    ],
+    "import/order": "off",
     "import/prefer-default-export": "off",
     "no-console": "error",
     "no-restricted-syntax": "off",
     "no-use-before-define": ["error", { "functions": false }],
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        "environment": "node",
+        "groups": [
+          ["side-effect", "side-effect-style"],
+          ["builtin", "external"],
+          ["index", "internal", "parent", "sibling", "unknown"],
+          "object",
+          [
+            "builtin-type",
+            "external-type",
+            "index-type",
+            "internal-type",
+            "parent-type",
+            "sibling-type",
+            "type"
+          ],
+          "style"
+        ]
+      }
+    ],
     "require-await": "error",
-    "sort-keys": "error",
     "sort-vars": "error",
     "unicorn/filename-case": ["error", { "case": "camelCase" }],
     "unicorn/numeric-separators-style": ["error", { "number": { "minimumDigits": 0 } }],

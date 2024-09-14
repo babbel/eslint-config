@@ -3,12 +3,31 @@
   "globals": {
     "Bun": "readonly"
   },
-  "settings": {
-    "import/core-modules": ["bun", "bun:jsc", "bun:sql", "bun:sqlite", "bun:test"]
-  },
   "rules": {
     "n/no-unsupported-features/es-builtins": "off",
     "n/no-unsupported-features/es-syntax": "off",
-    "n/no-unsupported-features/node-builtins": "off"
+    "n/no-unsupported-features/node-builtins": "off",
+    "perfectionist/sort-imports": [
+      "error",
+      {
+        "environment": "bun",
+        "groups": [
+          ["side-effect", "side-effect-style"],
+          ["builtin", "external"],
+          ["index", "internal", "parent", "sibling", "unknown"],
+          "object",
+          [
+            "builtin-type",
+            "external-type",
+            "index-type",
+            "internal-type",
+            "parent-type",
+            "sibling-type",
+            "type"
+          ],
+          "style"
+        ]
+      }
+    ]
   }
 }

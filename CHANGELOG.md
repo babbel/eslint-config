@@ -2,7 +2,9 @@
 
 ## 2.1.0
 
-- Add [`eslint-plugin-react-perf`](https://github.com/cvazac/eslint-plugin-react-perf) to the `/react` config and all its dependent configs
+- Add [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) to the base configuration and all its dependent configurations
+  - Its rules replace rules `import/order` and `sort-keys`
+- Add [`eslint-plugin-react-perf`](https://github.com/cvazac/eslint-plugin-react-perf) to the `/react` configuration and all its dependent configurations
 - Upgrade dependencies to latest versions
 - Upgrade Bun version from `1.1.17` to `1.1.27`
 
