@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.1.0
+
+- Add [`eslint-plugin-react-perf`](https://github.com/cvazac/eslint-plugin-react-perf) to the `/react` config and all its dependent configs
+- Upgrade dependencies to latest versions
+- Upgrade Bun version from `1.1.17` to `1.1.27`
+
 ## 2.0.3
 
 - Upgrade dependencies to latest versions

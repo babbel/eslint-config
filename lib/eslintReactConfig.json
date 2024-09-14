@@ -1,9 +1,10 @@
 {
-  "plugins": ["eslint-plugin-jsx-a11y"],
+  "plugins": ["eslint-plugin-jsx-a11y", "eslint-plugin-react-perf"],
   "extends": [
     "eslint-config-airbnb",
     "airbnb/hooks",
     "plugin:jsx-a11y/recommended",
+    "plugin:react-perf/recommended",
     "./eslintBaseConfig.json"
   ],
   "env": {
