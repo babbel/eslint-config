@@ -1,8 +1,8 @@
 // Internal Imports
 import {
+  alternateRoute,
   buildUncachedResponse,
   defaultRoute,
-  alternateRoute,
 } from './exampleTypescriptConfigImport.ts';
 
 // Type Imports
