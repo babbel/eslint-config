@@ -62,8 +62,9 @@
         ]
       }
     ],
+    "perfectionist/sort-named-exports": ["error", { "groupKind": "values-first" }],
+    "perfectionist/sort-named-imports": ["error", { "groupKind": "values-first" }],
     "require-await": "error",
-    "sort-vars": "error",
     "unicorn/filename-case": ["error", { "case": "camelCase" }],
     "unicorn/numeric-separators-style": ["error", { "number": { "minimumDigits": 0 } }],
     "unicorn/relative-url-style": ["error", "always"],
