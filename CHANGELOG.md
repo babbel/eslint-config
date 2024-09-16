@@ -3,7 +3,7 @@
 ## 2.1.0
 
 - Add [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) to the base configuration and all its dependent configurations
-  - Provides more consistent alphabetical sorting features than what ESLint provides by default
+  - Provides more robust and consistent alphabetical sorting features than what ESLint provides by default
   - Its rules replace rules `import/order`, `sort-keys`, and `sort-vars`
 - Add [`eslint-plugin-react-perf`](https://github.com/cvazac/eslint-plugin-react-perf) to the `/react` configuration and all its dependent configurations
   - Provides performance-related checks to prevent code that causes performance problems
