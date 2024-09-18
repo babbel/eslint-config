@@ -24,4 +24,4 @@ function alternateRoute(apiGatewayEvent: APIGatewayProxyEvent): APIGatewayProxyS
 }
 
 // Module Exports
-export { buildUncachedResponse, defaultRoute, alternateRoute };
+export { alternateRoute, buildUncachedResponse, defaultRoute };
