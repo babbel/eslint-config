@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.1
+
+- Improve TypeScript type-aware linting compatibility by passing `true` to `project` instead of a relative path. This should [auto-find the `tsconfig.json` file nearest the source file being linted](https://typescript-eslint.io/packages/parser/#project).
+
 ## 2.1.0
 
 - Add [`eslint-plugin-perfectionist`](https://github.com/azat-io/eslint-plugin-perfectionist) to the base configuration and all its dependent configurations
