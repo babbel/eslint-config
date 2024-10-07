@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.0
+
+- Sort type imports first by builtin and external types group and then into an internal types group. Otherwise [perfectionist sorts the types alphabetically](https://github.com/azat-io/eslint-plugin-perfectionist/issues/295). Sorting the types in this way is consistent with the non type imports and the previous `import/order` rules.
+
 ## 2.1.1
 
 - Improve TypeScript type-aware linting compatibility by passing `true` to `project` instead of a relative path. This should [auto-find the `tsconfig.json` file nearest the source file being linted](https://typescript-eslint.io/packages/parser/#project).
