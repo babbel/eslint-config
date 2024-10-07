@@ -49,15 +49,8 @@
           ["builtin", "external"],
           ["index", "internal", "parent", "sibling", "unknown"],
           "object",
-          [
-            "builtin-type",
-            "external-type",
-            "index-type",
-            "internal-type",
-            "parent-type",
-            "sibling-type",
-            "type"
-          ],
+          ["builtin-type", "external-type"],
+          ["index-type", "internal-type", "parent-type", "sibling-type", "type"],
           "style"
         ]
       }
