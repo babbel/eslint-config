@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0
+
+- Add `eslint-plugin-react-compiler` to all React- and Preact-based configs
+- Set explicit support for Node.js LTS versions 20 and 22
+- Upgrade dependencies to latest versions
+
 ## 2.1.1
 
 - Improve TypeScript type-aware linting compatibility by passing `true` to `project` instead of a relative path. This should [auto-find the `tsconfig.json` file nearest the source file being linted](https://typescript-eslint.io/packages/parser/#project).

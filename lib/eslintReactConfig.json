@@ -1,5 +1,5 @@
 {
-  "plugins": ["eslint-plugin-jsx-a11y", "eslint-plugin-react-perf"],
+  "plugins": ["eslint-plugin-jsx-a11y", "eslint-plugin-react-perf", "eslint-plugin-react-compiler"],
   "extends": [
     "eslint-config-airbnb",
     "airbnb/hooks",
@@ -19,6 +19,7 @@
   "rules": {
     "jsx-a11y/lang": "error",
     "jsx-a11y/prefer-tag-over-role": "error",
+    "react-compiler/react-compiler": "error",
     "unicorn/prevent-abbreviations": [
       "error",
       {
