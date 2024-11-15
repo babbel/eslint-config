@@ -20,7 +20,6 @@ const regularExpressions = {
   noSuperLinearBacktracking: /a*b+a*$/, // Rule: regexp/no-super-linear-backtracking
   noUselessAssertions: /\bfoo\b/, // Rule: regexp/no-useless-assertions
   noUselessBackreference: /(a?)b\1/, // Rule: regexp/no-useless-backreference
-  // eslint-disable-next-line unicorn/better-regex -- conflicts with the strict rule
   strict: /\}/, // Rule: regexp/strict
 };
 
