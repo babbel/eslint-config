@@ -6,6 +6,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
+      id-token: write
     steps:
       - name: CPU Details
         run: lscpu
@@ -13,6 +16,14 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: "1.1.27"
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ vars.AWS_REGION }}
+          role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
+      - uses: aws-actions/aws-secretsmanager-get-secrets@v2
+        with:
+          parse-json-secrets: true
+          secret-ids: ",${{ vars.NPM_USER_SECRET_ARN }}"
       - uses: mangs/simple-release-notes-action@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -21,4 +32,4 @@ jobs:
         with:
           access: public
           registry: https://registry.npmjs.org/
-          token: ${{ secrets.NPM_USER_ACCESS_TOKEN }}
+          token: ${{ env.NPM_USER_ACCESS_TOKEN }}
