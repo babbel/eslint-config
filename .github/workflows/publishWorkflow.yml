@@ -23,7 +23,7 @@ jobs:
       - uses: aws-actions/aws-secretsmanager-get-secrets@v2
         with:
           parse-json-secrets: true
-          secret-ids: ",${{ vars.NPM_USER_SECRET_ARN }}"
+          secret-ids: NPM_USER,${{ vars.NPM_USER_SECRET_ARN }}
       - uses: mangs/simple-release-notes-action@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
