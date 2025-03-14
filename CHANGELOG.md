@@ -4,6 +4,7 @@
 
 - Exclude functions from rule `@typescript-eslint/no-use-before-define`
 - Upgrade dependencies to latest versions
+- Upgrade Bun version from `1.1.27` to `1.2.4`
 
 ## 2.2.1
 
