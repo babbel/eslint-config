@@ -2,6 +2,11 @@
 import type { APIGatewayProxyEvent, APIGatewayProxyStructuredResultV2 } from 'aws-lambda';
 
 // Local Functions
+function alternateRoute(apiGatewayEvent: APIGatewayProxyEvent): APIGatewayProxyStructuredResultV2 {
+  const { path } = apiGatewayEvent;
+  return buildUncachedResponse(`Default route path: ${path}`);
+}
+
 function buildUncachedResponse(body: string, statusCode = 200) {
   return {
     body,
@@ -14,11 +19,6 @@ function buildUncachedResponse(body: string, statusCode = 200) {
 }
 
 function defaultRoute(apiGatewayEvent: APIGatewayProxyEvent): APIGatewayProxyStructuredResultV2 {
-  const { path } = apiGatewayEvent;
-  return buildUncachedResponse(`Default route path: ${path}`);
-}
-
-function alternateRoute(apiGatewayEvent: APIGatewayProxyEvent): APIGatewayProxyStructuredResultV2 {
   const { path } = apiGatewayEvent;
   return buildUncachedResponse(`Default route path: ${path}`);
 }
