@@ -39,6 +39,12 @@ function checkRegexRuleNoUselessDollarReplacements(message = 'One Two') {
   return message.replace(/(\w+)\s(\w+)/, '$2, $1');
 }
 
+// Rule: unicorn/explicit-length-check
+function checkUnicornRuleExplicitLengthCheck() {
+  const numbers = checkUnicornRuleNoArrayCallbackReference();
+  return Array.isArray(numbers) && numbers.length > 0; // Rule: unicorn/no-instanceof-array
+}
+
 // Rule: unicorn/no-array-callback-reference
 function checkUnicornRuleNoArrayCallbackReference() {
   return [1, 2, 3].map((item) => item);
@@ -47,12 +53,6 @@ function checkUnicornRuleNoArrayCallbackReference() {
 // Rule: unicorn/prefer-array-find
 function checkUnicornRulePreferArrayFind() {
   return [1, 2, 3].find((value) => value === 2);
-}
-
-// Rule: unicorn/explicit-length-check
-function checkUnicornRuleExplicitLengthCheck() {
-  const numbers = checkUnicornRuleNoArrayCallbackReference();
-  return Array.isArray(numbers) && numbers.length > 0; // Rule: unicorn/no-instanceof-array
 }
 
 // Rule: unicorn/prefer-array-flat
@@ -71,11 +71,6 @@ function checkUnicornRulePreferAt() {
   return list.at(-1);
 }
 
-// Rule: unicorn/prefer-includes
-function checkUnicornRulePreferIncludes() {
-  return 'John Smith'.includes('Jo');
-}
-
 // Rule: unicorn/prefer-blob-reading-methods
 async function checkUnicornRulePreferBlobReadingMethods() {
   const container = { hello: 'world' };
@@ -84,6 +79,11 @@ async function checkUnicornRulePreferBlobReadingMethods() {
   });
   const text = await blob.text();
   return text;
+}
+
+// Rule: unicorn/prefer-includes
+function checkUnicornRulePreferIncludes() {
+  return 'John Smith'.includes('Jo');
 }
 
 // Rule: unicorn/prefer-object-from-entries
