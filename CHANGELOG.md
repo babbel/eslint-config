@@ -5,6 +5,10 @@
 - Exclude functions from rule `@typescript-eslint/no-use-before-define`
 - Upgrade dependencies to latest versions
 
+## 2.2.1
+
+- Updated publish workflow's way of retrieving secrets
+
 ## 2.2.0
 
 - Add `eslint-plugin-react-compiler` to all React- and Preact-based configs
