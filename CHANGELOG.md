@@ -3,6 +3,7 @@
 ## 2.3.0
 
 - Exclude functions from rule `@typescript-eslint/no-use-before-define`
+  - Reasoning: functions always get hoisted so there's no risk in calling a function "before" it's defined. With this change, there will be less friction working with the linter.
 - Upgrade dependencies to latest versions
 - Upgrade Bun version from `1.1.27` to `1.2.4`
 
