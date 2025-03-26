@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.4.0
+
+- Limit rule `perfectionist/sort-modules` to functions and classes
+  - **Reasoning:** types and interfaces are often dependent on one another, so keeping them all in alphanumeric order is often impossible
+- Upgrade dependencies to latest versions
+
 ## 2.3.0
 
 - Exclude functions from rule `@typescript-eslint/no-use-before-define`
