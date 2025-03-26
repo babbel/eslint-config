@@ -2,8 +2,7 @@
 
 ## 2.4.0
 
-- Limit rule `perfectionist/sort-modules` to functions and classes
-  - **Reasoning:** types and interfaces are often dependent on one another, so keeping them all in alphanumeric order is often impossible
+- Disable rule `perfectionist/sort-modules` because it was added in Perfectionist version 4's recommended rules; linting friction should be reduced as a result.
 - Upgrade dependencies to latest versions
 
 ## 2.3.0
