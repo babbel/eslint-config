@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.4.0
+
+- Disable rule `perfectionist/sort-modules` because it was added in Perfectionist version 4's recommended rules; linting friction should be reduced as a result.
+- Upgrade dependencies to latest versions
+
 ## 2.3.0
 
 - Exclude functions from rule `@typescript-eslint/no-use-before-define`
