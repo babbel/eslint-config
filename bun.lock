@@ -18,7 +18,7 @@
         "eslint-plugin-jest-formatting": "3.1.0",
         "eslint-plugin-jsdoc": "50.6.9",
         "eslint-plugin-jsx-a11y": "6.10.2",
-        "eslint-plugin-n": "17.16.2",
+        "eslint-plugin-n": "17.17.0",
         "eslint-plugin-perfectionist": "4.10.1",
         "eslint-plugin-playwright": "2.2.0",
         "eslint-plugin-react-compiler": "19.0.0-beta-e552027-20250112",
@@ -485,7 +485,7 @@
 
     "eslint-plugin-jsx-a11y": ["eslint-plugin-jsx-a11y@6.10.2", "", { "dependencies": { "aria-query": "^5.3.2", "array-includes": "^3.1.8", "array.prototype.flatmap": "^1.3.2", "ast-types-flow": "^0.0.8", "axe-core": "^4.10.0", "axobject-query": "^4.1.0", "damerau-levenshtein": "^1.0.8", "emoji-regex": "^9.2.2", "hasown": "^2.0.2", "jsx-ast-utils": "^3.3.5", "language-tags": "^1.0.9", "minimatch": "^3.1.2", "object.fromentries": "^2.0.8", "safe-regex-test": "^1.0.3", "string.prototype.includes": "^2.0.1" }, "peerDependencies": { "eslint": "^3 || ^4 || ^5 || ^6 || ^7 || ^8 || ^9" } }, "sha512-scB3nz4WmG75pV8+3eRUQOHZlNSUhFNq37xnpgRkCCELU3XMvXAxLk1eqWWyE22Ki4Q01Fnsw9BA3cJHDPgn2Q=="],
 
-    "eslint-plugin-n": ["eslint-plugin-n@17.16.2", "", { "dependencies": { "@eslint-community/eslint-utils": "^4.4.1", "enhanced-resolve": "^5.17.1", "eslint-plugin-es-x": "^7.8.0", "get-tsconfig": "^4.8.1", "globals": "^15.11.0", "ignore": "^5.3.2", "minimatch": "^9.0.5", "semver": "^7.6.3" }, "peerDependencies": { "eslint": ">=8.23.0" } }, "sha512-iQM5Oj+9o0KaeLoObJC/uxNGpktZCkYiTTBo8PkRWq3HwNcRxwpvSDFjBhQ5+HLJzBTy+CLDC5+bw0Z5GyhlOQ=="],
+    "eslint-plugin-n": ["eslint-plugin-n@17.17.0", "", { "dependencies": { "@eslint-community/eslint-utils": "^4.5.0", "enhanced-resolve": "^5.17.1", "eslint-plugin-es-x": "^7.8.0", "get-tsconfig": "^4.8.1", "globals": "^15.11.0", "ignore": "^5.3.2", "minimatch": "^9.0.5", "semver": "^7.6.3" }, "peerDependencies": { "eslint": ">=8.23.0" } }, "sha512-2VvPK7Mo73z1rDFb6pTvkH6kFibAmnTubFq5l83vePxu0WiY1s0LOtj2WHb6Sa40R3w4mnh8GFYbHBQyMlotKw=="],
 
     "eslint-plugin-perfectionist": ["eslint-plugin-perfectionist@4.10.1", "", { "dependencies": { "@typescript-eslint/types": "^8.26.0", "@typescript-eslint/utils": "^8.26.0", "natural-orderby": "^5.0.0" }, "peerDependencies": { "eslint": ">=8.45.0" } }, "sha512-GXwFfL47RfBLZRGQdrvGZw9Ali2T2GPW8p4Gyj2fyWQ9396R/HgJMf0m9kn7D6WXRwrINfTDGLS+QYIeok9qEg=="],
 
