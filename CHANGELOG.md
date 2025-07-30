@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.4.1
+## 2.5.0
 
 - Raise minimum ESLint version to `8.57.0`
 - Upgrade Bun version from `1.2.4` to `1.2.14`
