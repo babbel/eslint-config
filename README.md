@@ -45,12 +45,9 @@ The configuration names specified below should be used as items in the `extends`
   - `eslint-plugin-regexp` ([documentation](https://github.com/ota-meshi/eslint-plugin-regexp#readme))
   - `eslint-plugin-unicorn` ([documentation](https://github.com/sindresorhus/eslint-plugin-unicorn#readme))
 - Native ES module-style imports and exports
-
   - Imports
-
     - File extensions required like in the spec (e.g. `import { some } from './thing.mjs';`)
     - Imports declared at the top of each file in ordered groups separated by an empty line
-
       1. External (e.g. NPM packages) and Node.js built-in (e.g. `node:fs`) imports
       2. Internal imports (e.g. from your `src/` directory)
       3. Type imports (e.g. `import type ...`)
