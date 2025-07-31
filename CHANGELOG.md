@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.5.0
+
+- Raise minimum ESLint version to `8.57.0`
+- Upgrade Bun version from `1.2.4` to `1.2.14`
+- Upgrade dependencies to latest versions
+
 ## 2.4.0
 
 - Disable rule `perfectionist/sort-modules` because it was added in Perfectionist version 4's recommended rules; linting friction should be reduced as a result.
