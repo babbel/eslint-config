@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.1
+
+- Use new NPM deploy token
+
 ## 2.5.0
 
 - Raise minimum ESLint version to `8.57.0`
