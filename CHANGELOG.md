@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.5.2
+
+- Publish package version to npmjs.org by OIDC
+
 ## 2.5.1
 
 - Use new NPM deploy token
