@@ -20,16 +20,12 @@ jobs:
         with:
           aws-region: ${{ vars.AWS_REGION }}
           role-to-assume: ${{ vars.AWS_IAM_ROLE_ARN }}
-      - uses: aws-actions/aws-secretsmanager-get-secrets@v2
-        with:
-          parse-json-secrets: true
-          secret-ids: NPM_USER,${{ vars.NPM_USER_SECRET_ARN }}
       - uses: mangs/simple-release-notes-action@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           should_auto_update_major_tag: false
+      # authorizing with OIDC
       - uses: JS-DevTools/npm-publish@v3
         with:
           access: public
           registry: https://registry.npmjs.org/
-          token: ${{ env.NPM_USER_ACCESS_TOKEN }}
